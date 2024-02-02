@@ -7,7 +7,7 @@ const password = process.env.PASSWORD!;
 let loginPage: LoginPage;
 
 
-// test.use({storageState: '.auth/admin.json'});
+test.use({storageState: '.auth/admin.json'});
 test.beforeEach(async ({ page }) => {
   await page.goto(pages.profile);
   loginPage = new LoginPage(page);
